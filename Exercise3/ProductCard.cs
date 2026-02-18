@@ -23,19 +23,23 @@ namespace Exercise3
             InitializeComponent();
             WireUpEvents();
         }
+
         private void WireUpEvents()
         {
-            this.Click += (s, e) => OnProductClicked(e);
-
-            foreach (Control c in this.Controls)
+            Action<Control> bindEvents = null;
+            bindEvents = (ctrl) =>
             {
-                c.Click += (s, e) => OnProductClicked(e);
-                foreach (Control child in c.Controls)
+                ctrl.Click += (s, e) => OnProductClicked(e);
+
+                foreach (Control child in ctrl.Controls)
                 {
-                    child.Click += (s, e) => OnProductClicked(e);
+                    bindEvents(child);
                 }
-            }
+            };
+
+            bindEvents(this);
         }
+
         protected virtual void OnProductClicked(EventArgs e)
         {
             ProductClicked?.Invoke(this, e);

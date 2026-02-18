@@ -46,9 +46,10 @@
             this.panel1.Controls.Add(this.tableLayoutPanel1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.panel1.Location = new System.Drawing.Point(4, 4);
+            this.panel1.Location = new System.Drawing.Point(3, 3);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(233, 103);
+            this.panel1.Size = new System.Drawing.Size(175, 83);
             this.panel1.TabIndex = 0;
             // 
             // tableLayoutPanel1
@@ -60,10 +61,11 @@
             this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel2, 1, 0);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
+            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 1;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(233, 103);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(175, 83);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
             // pbProductImage
@@ -71,9 +73,10 @@
             this.pbProductImage.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pbProductImage.BackgroundImage")));
             this.pbProductImage.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pbProductImage.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pbProductImage.Location = new System.Drawing.Point(3, 3);
+            this.pbProductImage.Location = new System.Drawing.Point(2, 2);
+            this.pbProductImage.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pbProductImage.Name = "pbProductImage";
-            this.pbProductImage.Size = new System.Drawing.Size(74, 97);
+            this.pbProductImage.Size = new System.Drawing.Size(56, 79);
             this.pbProductImage.TabIndex = 0;
             this.pbProductImage.TabStop = false;
             // 
@@ -84,12 +87,13 @@
             this.tableLayoutPanel2.Controls.Add(this.lbProductName, 0, 0);
             this.tableLayoutPanel2.Controls.Add(this.lbPrice, 0, 1);
             this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel2.Location = new System.Drawing.Point(83, 3);
+            this.tableLayoutPanel2.Location = new System.Drawing.Point(62, 2);
+            this.tableLayoutPanel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 2;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(147, 97);
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(111, 79);
             this.tableLayoutPanel2.TabIndex = 1;
             // 
             // lbProductName
@@ -98,9 +102,10 @@
             this.lbProductName.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lbProductName.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbProductName.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.lbProductName.Location = new System.Drawing.Point(3, 0);
+            this.lbProductName.Location = new System.Drawing.Point(2, 0);
+            this.lbProductName.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbProductName.Name = "lbProductName";
-            this.lbProductName.Size = new System.Drawing.Size(141, 48);
+            this.lbProductName.Size = new System.Drawing.Size(107, 39);
             this.lbProductName.TabIndex = 0;
             this.lbProductName.Text = "Add Product Name";
             this.lbProductName.TextAlign = System.Drawing.ContentAlignment.BottomRight;
@@ -111,23 +116,25 @@
             this.lbPrice.AutoSize = true;
             this.lbPrice.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbPrice.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.lbPrice.Location = new System.Drawing.Point(38, 72);
+            this.lbPrice.Location = new System.Drawing.Point(23, 59);
+            this.lbPrice.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbPrice.Name = "lbPrice";
-            this.lbPrice.Size = new System.Drawing.Size(106, 25);
+            this.lbPrice.Size = new System.Drawing.Size(86, 20);
             this.lbPrice.TabIndex = 1;
             this.lbPrice.Text = "Add Price";
             this.lbPrice.TextAlign = System.Drawing.ContentAlignment.BottomRight;
             // 
             // ProductCard
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(53)))), ((int)(((byte)(44)))));
             this.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Controls.Add(this.panel1);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "ProductCard";
-            this.Padding = new System.Windows.Forms.Padding(4);
-            this.Size = new System.Drawing.Size(241, 111);
+            this.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.Size = new System.Drawing.Size(181, 89);
             this.panel1.ResumeLayout(false);
             this.tableLayoutPanel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pbProductImage)).EndInit();
